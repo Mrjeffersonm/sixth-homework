@@ -33,7 +33,7 @@ function callWeather(searchWords) {
     searchWords = searchWords.replace(/\s+/g, '+').toLowerCase();
     $.ajax({
         type: "GET",
-        url: "http://api.openweathermap.org/geo/1.0/direct?q=" + searchWords + "&appid=aaab36c2086cb7f783b4fa9404b28e44",
+        url: "https://api.openweathermap.org/geo/1.0/direct?q=" + searchWords + "&appid=aaab36c2086cb7f783b4fa9404b28e44",
         dataType: "json",
         success: onSearchComplete,
         });
@@ -50,7 +50,7 @@ function onSearchComplete(result) {
     console.log(lon);
     $.ajax({
         type: "GET",
-        url: "http://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=aaab36c2086cb7f783b4fa9404b28e44&units=imperial",
+        url: "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + lon + "&appid=aaab36c2086cb7f783b4fa9404b28e44&units=imperial",
         dataType: "json",
         success: onGetWeatherComplete,
     })
