@@ -1,0 +1,29 @@
+.title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    background-image: linear-gradient(to right,rgb(83, 97, 221), rgb(7, 7, 231), rgb(83, 97, 221));
+    font-size: x-large;
+    width: 100%;
+    text-align: end;
+    padding-right: 20px;
+}
+
+body {
+    background-color: rgb(135, 206, 235);
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.weather-day {
+    display: inline-block;
+    margin: 20px;
+    border: 3px;
+    border-color: rgb(2, 14, 14);
+    border-style: solid;
+    padding: 4px;
+}
